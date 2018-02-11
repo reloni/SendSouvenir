@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DIN-Pro-Condensed-Bold.otf">
+            <string>DINPro-CondensedBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCardView" customModule="SendSouvenir" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="O8l-m4-5eF"/>
+                <outlet property="label" destination="icg-Tz-u1m" id="xXw-o2-fn9"/>
+                <outlet property="leftImage" destination="7Yi-c1-2qm" id="aQ7-UM-klK"/>
+                <outlet property="rightImage" destination="uF7-7g-IJM" id="qMW-uG-xiC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="7Yi-c1-2qm">
+                    <rect key="frame" x="10" y="321.5" width="32" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="CnY-x4-qRb"/>
+                        <constraint firstAttribute="width" constant="32" id="RRJ-Uy-79x"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icg-Tz-u1m">
+                    <rect key="frame" x="52" y="323" width="279" height="21"/>
+                    <fontDescription key="fontDescription" name="DINPro-CondensedBold" family="DIN Pro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-7g-IJM">
+                    <rect key="frame" x="341" y="321.5" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="BlM-rs-xwy"/>
+                        <constraint firstAttribute="width" constant="24" id="Ivu-9z-cFv"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8U-UZ-pJc">
+                    <rect key="frame" x="0.0" y="666" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="11L-2g-UbA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="icg-Tz-u1m" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4m9-6b-4hU"/>
+                <constraint firstItem="uF7-7g-IJM" firstAttribute="leading" secondItem="icg-Tz-u1m" secondAttribute="trailing" constant="10" id="IjH-Mw-uYQ"/>
+                <constraint firstItem="icg-Tz-u1m" firstAttribute="leading" secondItem="7Yi-c1-2qm" secondAttribute="trailing" constant="10" id="P31-jq-FSY"/>
+                <constraint firstItem="x8U-UZ-pJc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="QvQ-Or-3AW"/>
+                <constraint firstItem="uF7-7g-IJM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Smt-Bx-8yi"/>
+                <constraint firstItem="7Yi-c1-2qm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Xal-hB-l2Q"/>
+                <constraint firstItem="x8U-UZ-pJc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YE1-gl-TPB"/>
+                <constraint firstItem="uF7-7g-IJM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="i5P-jA-EuH"/>
+                <constraint firstItem="7Yi-c1-2qm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ruk-ez-LEj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x8U-UZ-pJc" secondAttribute="trailing" id="zfA-TS-tsF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mastercard" width="32" height="32"/>
+    </resources>
+</document>
